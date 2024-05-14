@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "//rest-world",
         element: <Home />,
       },
       {
-        path: "/:countryName",
+        path: "/rest-world/:countryName",
         element: <ItemPage />,
       },
     ],
