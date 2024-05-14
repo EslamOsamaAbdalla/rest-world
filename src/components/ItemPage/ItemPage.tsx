@@ -46,7 +46,7 @@ function ItemPage() {
             className={`w-11/12 flex flex-col ${darkMode ? "text-white" : ""}`}
           >
             <Link
-              to="/"
+              to="/rest-world"
               className="py-3 px-8 my-12 ml-[5%] self-start border-2 flex items-center"
             >
               <FaLongArrowAltLeft className="mx-2" /> back

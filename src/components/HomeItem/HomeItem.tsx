@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function HomeItem({ apiData, darkMode }: { apiData: any; darkMode: boolean }) {
   return (
     <Link
-      to={`/${apiData.name.common}`}
+      to={`/rest-world/${apiData.name.common}`}
       className={`flex flex-col w-1/5 mx-2 my-10 ${
         darkMode ? "bg-neutral-700 text-white" : "bg-gray-100"
       }`}
