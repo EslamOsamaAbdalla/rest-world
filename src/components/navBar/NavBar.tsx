@@ -8,7 +8,7 @@ function NavBar({
 }) {
   return (
     <header
-      className={`border-b-2 h-12 capitalize font-bold ${
+      className={`border-b-2 h-12 capitalize font-bold w-full ${
         darkMode ? " bg-neutral-900 text-white" : ""
       }`}
     >

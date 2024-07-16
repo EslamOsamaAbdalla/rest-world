@@ -21,7 +21,7 @@ function HomeActionBar({
         darkMode ? "bg-neutral-900" : ""
       }`}
     >
-      <div className="relative w-1/3">
+      <div className="relative w-3/5 md:w-1/3">
         <input
           type="text"
           onChange={searchValue}

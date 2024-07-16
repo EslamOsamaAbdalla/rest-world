@@ -41,7 +41,7 @@ function ItemPage() {
     <>
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       {Array.isArray(theApiData) ? (
-        <div className={`w-full h-[92vh] ${darkMode ? " bg-neutral-800" : ""}`}>
+        <div className={`w-full min-h-screen md:h-[92vh] ${darkMode ? " bg-neutral-800" : ""}`}>
           <div
             className={`w-11/12 flex flex-col ${darkMode ? "text-white" : ""}`}
           >
@@ -51,8 +51,8 @@ function ItemPage() {
             >
               <FaLongArrowAltLeft className="mx-2" /> back
             </Link>
-            <div className="w-11/12 min-h-[40vh] m-auto flex">
-              <img src={theApiData[0].flags.png} className="max-h-64" />
+            <div className="w-11/12 min-h-[40vh] m-auto flex flex-col md:flex-row">
+              <img src={theApiData[0].flags.png} className="max-h-64 ml-10 mb-10 md:m-0" />
               <div className="flex flex-col justify-between ml-[10%] w-10/12">
                 <div className="flex flex-col">
                   <h2 className="text-2xl">{theApiData[0].name.common}</h2>
